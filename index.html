@@ -17,8 +17,8 @@
         imagesrcset="/_next/image?url=%2Fgithub.webp&amp;w=32&amp;q=75 1x, /_next/image?url=%2Fgithub.webp&amp;w=64&amp;q=75 2x"
         fetchpriority="high">
     <meta name="next-head-count" content="6">
-    <link rel="preload" href="font/dd7c4990ef955611-s.p.woff2" as="font" type="font/woff2"
-        crossorigin="anonymous" data-next-font="size-adjust">
+    <link rel="preload" href="font/dd7c4990ef955611-s.p.woff2" as="font" type="font/woff2" crossorigin="anonymous"
+        data-next-font="size-adjust">
     <link rel="preload" href="css/f5187cb814d02a19.css" as="style" crossorigin="">
     <link rel="stylesheet" href="css/f5187cb814d02a19.css" crossorigin="" data-n-g=""><noscript
         data-n-css=""></noscript>
@@ -1154,7 +1154,7 @@
             }
         }
 
-        .costum-cursor{
+        .costum-cursor {
             position: fixed;
             top: 50%;
             left: 50%;
@@ -1169,7 +1169,7 @@
             transition: transform 0.3s, opacity 0.3s;
         }
 
-        .costum-cursor-before{
+        .costum-cursor-before {
             position: fixed;
             top: 50%;
             left: 50%;
@@ -1180,10 +1180,10 @@
             border-radius: 50%;
             z-index: 9999;
             transition: .2s ease;
-            pointer-events: none; /* Empêche les interactions */
+            pointer-events: none;
+            /* Empêche les interactions */
             opacity: 1;
         }
-        
     </style>
 
     <Script>
@@ -1191,7 +1191,7 @@
             const cursor = document.querySelector('.costum-cursor');
             const cursorBefore = document.querySelector('.costum-cursor-before');
             const mouseHoverTrans = document.querySelectorAll('.mouseHoverTrans');
-               // Sélectionnez toutes les nav-options
+            // Sélectionnez toutes les nav-options
             const navOptions = document.querySelectorAll('.nav-option');
 
             // Mise à jour de la position des curseurs
@@ -1215,7 +1215,7 @@
                 });
             });
 
-             // Ajouter un gestionnaire d'événement à chaque option
+            // Ajouter un gestionnaire d'événement à chaque option
             navOptions.forEach(option => {
                 option.addEventListener('click', function () {
                     // Retirer la classe active de toutes les options
@@ -1227,7 +1227,8 @@
             });
         });
     </Script>
-    
+    <script src="js/panel.js"></script>
+
 </head>
 
 <body style="cursor: none;">
@@ -1280,19 +1281,26 @@
                                 </div>
                             </div>
                             <div class="nav-options-list flex flex-col gap-1">
-                                <p class="nav-option mouseHoverTrans nav-option-active" id="About"><a style="cursor: none;">About</a>
+                                <p class="nav-option panel1 mouseHoverTrans nav-option-active" id="About"><a
+                                        style="cursor: none;">About</a>
                                 </p>
-                                <p class="nav-option mouseHoverTrans" id="How does it work?"><a style="cursor: none;">How does it
+                                <p class="nav-option panel2 mouseHoverTrans" id="How does it work?"><a
+                                        style="cursor: none;">How does it
                                         work?</a></p>
-                                <p class="nav-option mouseHoverTrans" id="Act 1: The call to meme"><a style="cursor: none;">Act 1: The
+                                <p class="nav-option panel3 mouseHoverTrans" id="Act 1: The call to meme"><a
+                                        style="cursor: none;">Act 1: The
                                         call to meme</a></p>
-                                <p class="nav-option mouseHoverTrans" id="Act 2: The manifesto"><a style="cursor: none;">Act 2: The
+                                <p class="nav-option panel4 mouseHoverTrans" id="Act 2: The manifesto"><a
+                                        style="cursor: none;">Act 2: The
                                         manifesto</a></p>
-                                <p class="nav-option mouseHoverTrans" id="Act 3: AI mind ignited"><a style="cursor: none;">Act 3: AI
+                                <p class="nav-option panel5 mouseHoverTrans" id="Act 3: AI mind ignited"><a
+                                        style="cursor: none;">Act 3: AI
                                         mind ignited</a></p>
-                                <p class="nav-option mouseHoverTrans" id="Act 4: Creation or Creator?"><a style="cursor: none;">Act 4:
+                                <p class="nav-option panel6 mouseHoverTrans" id="Act 4: Creation or Creator?"><a
+                                        style="cursor: none;">Act 4:
                                         Creation or Creator?</a></p>
-                                <p class="nav-option mouseHoverTrans" id="Act 5: Revolution started"><a style="cursor: none;">Act 5:
+                                <p class="nav-option panel7 mouseHoverTrans" id="Act 5: Revolution started"><a
+                                        style="cursor: none;">Act 5:
                                         Revolution started</a></p>
                             </div>
                             <div class="jsx-10954e4d1ea1b7d9 w-full py-8 relative">
@@ -1301,7 +1309,8 @@
                                         <div
                                             class="jsx-10954e4d1ea1b7d9 relative flex items-center justify-center gap-4">
                                             <a href="https://x.com/GagsterAgent" target="_blank"
-                                                rel="noopener noreferrer" class="jsx-10954e4d1ea1b7d9 group relative mouseHoverTrans"
+                                                rel="noopener noreferrer"
+                                                class="jsx-10954e4d1ea1b7d9 group relative mouseHoverTrans"
                                                 style="cursor: none;">
                                                 <div class="jsx-10954e4d1ea1b7d9 absolute top-1/2 left-full w-4 h-px bg-custom-green/30 
                     opacity-30
@@ -1330,7 +1339,8 @@
                                                         class="jsx-10954e4d1ea1b7d9 text-custom-green text-sm font-medium group-hover:text-shadow-green">Twitter</span>
                                                 </div>
                                             </a><a href="https://t.me/gagsterai" target="_blank"
-                                                rel="noopener noreferrer" class="jsx-10954e4d1ea1b7d9 group relative mouseHoverTrans"
+                                                rel="noopener noreferrer"
+                                                class="jsx-10954e4d1ea1b7d9 group relative mouseHoverTrans"
                                                 style="cursor: none;">
                                                 <div class="jsx-10954e4d1ea1b7d9 absolute top-1/2 left-full w-4 h-px bg-custom-green/30 
                     opacity-30
@@ -1359,7 +1369,8 @@
                                                         class="jsx-10954e4d1ea1b7d9 text-custom-green text-sm font-medium group-hover:text-shadow-green">Telegram</span>
                                                 </div>
                                             </a><a href="https://pump.fun" target="_blank" rel="noopener noreferrer"
-                                                class="jsx-10954e4d1ea1b7d9 group relative mouseHoverTrans" style="cursor: none;">
+                                                class="jsx-10954e4d1ea1b7d9 group relative mouseHoverTrans"
+                                                style="cursor: none;">
                                                 <div class="jsx-10954e4d1ea1b7d9 absolute top-1/2 left-full w-4 h-px bg-custom-green/30 
                     opacity-30
                     transition-all duration-300">
@@ -1388,7 +1399,8 @@
                                                         Fun</span></div>
                                             </a><a href="https://github.com/Agentic-Creative-Complex/agentic-smart-meme"
                                                 target="_blank" rel="noopener noreferrer"
-                                                class="jsx-10954e4d1ea1b7d9 group relative mouseHoverTrans" style="cursor: none;">
+                                                class="jsx-10954e4d1ea1b7d9 group relative mouseHoverTrans"
+                                                style="cursor: none;">
                                                 <div class="jsx-10954e4d1ea1b7d9 relative w-12 h-12">
                                                     <div class="jsx-10954e4d1ea1b7d9 absolute inset-0 rounded-full bg-custom-green/20 blur-xl transform scale-0 
                     group-hover:scale-150 transition-transform duration-300"></div>
@@ -1413,7 +1425,8 @@
                                         </div>
                                         <div
                                             class="jsx-10954e4d1ea1b7d9 relative flex items-center justify-center gap-4 py-8">
-                                            <a href="https://t.me/GagsterAi_bot" class="jsx-10954e4d1ea1b7d9 mouseHoverTrans"
+                                            <a href="https://t.me/GagsterAi_bot"
+                                                class="jsx-10954e4d1ea1b7d9 mouseHoverTrans"
                                                 style="cursor: none;"><button
                                                     class="chat-cyber-button w-full relative overflow-hidden group bg-[#20452f] transform-gpu  transition-all duration-300 ease-in-out hover:-translate-y-0.5 active:translate-y-0.5"
                                                     style="cursor: none;">
@@ -1522,7 +1535,7 @@
                 <main class="flex-grow overflow-hidden bg-content">
                     <div class="flex items-start justify-center w-full sm:px-10 py-11 scroll-container">
                         <div class="w-full max-w-[calc(100%-2rem)]">
-                            <div class="relative w-full h-screen overflow-hidden">
+                            <div class="relative w-full h-screen overflow-hidden aboutPanel" style="display: none;">
                                 <div class="absolute inset-0 z-0 fading-left">
                                     <div class="absolute absolute-center flex items-center flex-col z-10">
                                         <div class="page-title-wrap ">
@@ -1535,7 +1548,7 @@
                                                                 Welcome to Gagster!<div class="title-scanner"></div>
                                                                 <div class="title-glow"></div>
                                                             </h1>
-                                                           
+
                                                         </div>
                                                     </div>
                                                     <div class="corner-decor top-left"></div>
@@ -1808,14 +1821,869 @@
                                     </div>
                                 </div>
                             </div>
+                            <div class="workPanel" style="display: none;">
+                                <div
+                                    class="overflow-y-auto project-main rounded-lg text-card-foreground shadow-sm overflow-hidden">
+                                    <div class="project-grid"></div>
+                                    <div class="project-data-stream"></div>
+                                    <div class="project-content">
+                                        <div class="relative w-full max-w-4xl mx-auto flex justify-center">
+                                            <div class="relative group">
+                                                <div class="
+                                absolute inset-0 
+                                bg-gradient-to-r from-blue-500 via-purple-500 to-pink-500
+                                opacity-0 group-hover:opacity-75
+                                blur-xl
+                                transition-all duration-700
+                                -z-10
+                              "></div>
+                                                <div class="
+                                relative
+                                transform
+                                transition-all duration-700
+                                scale-100
+                              "><img alt="joke" loading="lazy" width="500" height="500" decoding="async" data-nimg="1"
+                                                        class="
+                                    relative z-10
+                                    transition-all duration-700
+                                    
+                                  " srcset="img/works (1).webp 1x, img/works (1).webp 2x" src="img/works (1).webp"
+                                                        style="color: transparent;">
+                                                    <div class="
+                                  absolute inset-0 z-20
+                                  bg-gradient-to-r from-cyan-500 to-blue-500
+                                  mix-blend-overlay
+                                  opacity-0 group-hover:opacity-50
+                                  transform group-hover:translate-x-1
+                                  transition-all duration-300
+                                "></div>
+                                                    <div class="
+                                  absolute inset-0 z-20
+                                  bg-gradient-to-r from-purple-500 to-pink-500
+                                  mix-blend-overlay
+                                  opacity-0 group-hover:opacity-50
+                                  transform group-hover:-translate-x-1
+                                  transition-all duration-300
+                                "></div>
+                                                    <div class="
+                                  absolute inset-0 z-30
+                                  bg-gradient-to-b from-transparent via-white to-transparent
+                                  opacity-0 group-hover:opacity-10
+                                  animate-scan
+                                  pointer-events-none
+                                "></div>
+                                                </div>
+                                                <div class="
+                                absolute inset-0 z-40
+                                border-2 border-transparent
+                                group-hover:border-cyan-500
+                                transition-all duration-700
+                                scale-100
+                              "></div>
+                                            </div>
+                                            <div class="absolute top-8 left-0 right-0 z-50">
+                                                <div class="page-title-wrap text-center">
+                                                    <div class="relative inline-block">
+                                                        <div class="tech-border title-bg">
+                                                            <div>
+                                                                <div style="display: grid;">
+                                                                    <h1 class="text-3xl sm:text-4xl font-bold page-title"
+                                                                        style="grid-area: 1 / 1 / -1 / -1;"
+                                                                        data-glitched="1">How does the Agent work?<div
+                                                                            class="title-scanner"></div>
+                                                                        <div class="title-glow"></div>
+                                                                    </h1>
+                                                                    <h1 class="text-3xl sm:text-4xl font-bold page-title"
+                                                                        style="grid-area: 1 / 1 / -1 / -1; user-select: none; pointer-events: none; opacity: 0;">
+                                                                        How does the Agent work?<div
+                                                                            class="title-scanner"></div>
+                                                                        <div class="title-glow"></div>
+                                                                    </h1>
+                                                                    <h1 class="text-3xl sm:text-4xl font-bold page-title"
+                                                                        style="grid-area: 1 / 1 / -1 / -1; user-select: none; pointer-events: none; opacity: 0;">
+                                                                        How does the Agent work?<div
+                                                                            class="title-scanner"></div>
+                                                                        <div class="title-glow"></div>
+                                                                    </h1>
+                                                                    <h1 class="text-3xl sm:text-4xl font-bold page-title"
+                                                                        style="grid-area: 1 / 1 / -1 / -1; user-select: none; pointer-events: none; opacity: 0;">
+                                                                        How does the Agent work?<div
+                                                                            class="title-scanner"></div>
+                                                                        <div class="title-glow"></div>
+                                                                    </h1>
+                                                                    <h1 class="text-3xl sm:text-4xl font-bold page-title"
+                                                                        style="grid-area: 1 / 1 / -1 / -1; user-select: none; pointer-events: none; opacity: 0;">
+                                                                        How does the Agent work?<div
+                                                                            class="title-scanner"></div>
+                                                                        <div class="title-glow"></div>
+                                                                    </h1>
+                                                                    <h1 class="text-3xl sm:text-4xl font-bold page-title"
+                                                                        style="grid-area: 1 / 1 / -1 / -1; user-select: none; pointer-events: none; opacity: 0;">
+                                                                        How does the Agent work?<div
+                                                                            class="title-scanner"></div>
+                                                                        <div class="title-glow"></div>
+                                                                    </h1>
+                                                                    <h1 class="text-3xl sm:text-4xl font-bold page-title"
+                                                                        style="grid-area: 1 / 1 / -1 / -1; user-select: none; pointer-events: none; opacity: 0;">
+                                                                        How does the Agent work?<div
+                                                                            class="title-scanner"></div>
+                                                                        <div class="title-glow"></div>
+                                                                    </h1>
+                                                                </div>
+                                                            </div>
+                                                            <div class="corner-decor top-left"></div>
+                                                            <div class="corner-decor top-right"></div>
+                                                            <div class="corner-decor bottom-left"></div>
+                                                            <div class="corner-decor bottom-right"></div>
+                                                            <div class="tech-line left"></div>
+                                                            <div class="tech-line right"></div>
+                                                            <div class="tech-line top"></div>
+                                                            <div class="tech-line bottom"></div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="info-section mt-8">
+                                            <p class="project-text glow-text"><span class="cyber-text-effect">Gagster
+                                                    Agent</span> is the demo AI agent launched through ACC Platform, and
+                                                it is currently running on version <span
+                                                    class="cyber-text-effect">ACC-OS v2.0.4</span>, the most recent ACC
+                                                Framework version.</p>
+                                            <div class="tech-section">
+                                                <p class="project-text"><span class="cyber-text-effect">ACC
+                                                        Framework</span> will include a public no-code web platform
+                                                    where non technical people will able to launch an agent just as easy
+                                                    as launching a token at pump.fun. The platform is currently in
+                                                    closed alpha stages and will be released soon. ACC will also
+                                                    automate pump.fun tokens deployments tied to those agents.</p>
+                                                <p class="project-text">As you can see at <span
+                                                        class="cyber-text-effect">Act 5</span> section, ACC has also
+                                                    opensourced the initial code version from their platform as the
+                                                    <span class="cyber-text-effect">Gagster Framework</span> and now it
+                                                    is free to use. But it requires technical expertise to setup and run
+                                                    the agents.
+                                                </p>
+                                            </div><br>
+                                            <div class="capabilities-section">
+                                                <h2 class="section-title">What makes ACC different from other
+                                                    automations?</h2>
+                                                <div class="capabilities-grid">
+                                                    <div
+                                                        class="capability-box wide border border-[#4AFF91] p-6 rounded-lg backdrop-blur-sm bg-black/90 hover:shadow-[0_0_20px_rgba(74,255,145,0.9)] transition-all duration-300">
+                                                        <h3 class="feature-title">Art feedback ingestion</h3>
+                                                        <ul class="feature-list">
+                                                            <li>Gagster Agent is constantly ingesting feedbacks from
+                                                                community on X and Telegram</li>
+                                                            <li>The models are constantly adapting and evolving by
+                                                                processing the ingested data</li>
+                                                            <li>Next art created will reflect community sentiment in
+                                                                some way</li>
+                                                        </ul>
+                                                        <div class="cyber-border"></div>
+                                                    </div>
+                                                    <div
+                                                        class="capability-box wide border border-[#4AFF91] p-6 rounded-lg backdrop-blur-sm bg-black/90 hover:shadow-[0_0_20px_rgba(74,255,145,0.9)] transition-all duration-300">
+                                                        <h3 class="feature-title">Unique art concept generation</h3>
+                                                        <p>Inspired on the infinite backrooms, we have multiple models
+                                                            running on the platform and each artwork generated is the
+                                                            result of a brainstorming session between the models.</p>
+                                                        <p>Three main topics are discussed by the models throughout an
+                                                            art generation:</p>
+                                                        <ul class="feature-list">
+                                                            <li>Scene: The background or location for the piece</li>
+                                                            <li>Characters: Who will be involved in the scene</li>
+                                                            <li>Context: The situation or motivation giving sense to the
+                                                                scene</li>
+                                                        </ul>
+                                                        <div class="cyber-border"></div>
+                                                    </div>
+                                                    <div
+                                                        class="capability-box border border-[#4AFF91] p-6 rounded-lg backdrop-blur-sm bg-black/90 hover:shadow-[0_0_20px_rgba(74,255,145,0.9)] transition-all duration-300">
+                                                        <h3 class="feature-title">The Concept Models</h3>
+                                                        <ul class="feature-list">
+                                                            <li>Claude 3.5 Haiku</li>
+                                                            <li>Llama 3.3</li>
+                                                            <li>GPT-4o</li>
+                                                        </ul>
+                                                        <div class="cyber-border"></div>
+                                                    </div>
+                                                    <div
+                                                        class="capability-box border border-[#4AFF91] p-6 rounded-lg backdrop-blur-sm bg-black/90 hover:shadow-[0_0_20px_rgba(74,255,145,0.9)] transition-all duration-300">
+                                                        <h3 class="feature-title">ACC-OS Custom RAG model</h3>
+                                                        <p class="">All the decision making is made by our own custom
+                                                            model based on llama-3.3.</p>
+                                                        <p class=""> This model leverages the brainstorming session
+                                                            results and decide which collaborations from each model will
+                                                            be used in the final composition.</p>
+                                                        <p class="feature-subtitle">If you keep an eye on the <span
+                                                                class="cyber-text-effect">Act 3</span> activity session
+                                                            you might be able to spot some logs related to the creation
+                                                            process.</p>
+                                                        <div class="cyber-border"></div>
+                                                    </div>
+                                                    <div
+                                                        class="capability-box border border-[#4AFF91] p-6 rounded-lg backdrop-blur-sm bg-black/90 hover:shadow-[0_0_20px_rgba(74,255,145,0.9)] transition-all duration-300">
+                                                        <h3 class="feature-title">Agent Integrations</h3>
+                                                        <ul class="feature-list">
+                                                            <li>For providing feedback on Gagster Agent's art you can
+                                                                reply one of its art posts on <a
+                                                                    class="cyber-text-effect"
+                                                                    href="https://x.com/GagsterAgent"
+                                                                    style="cursor: none;">Twitter</a></li>
+                                                            <li>Send a direct message on <a class="cyber-text-effect"
+                                                                    href="https://t.me/GagsterAi_bot"
+                                                                    style="cursor: none;">Telegram</a></li>
+                                                            <li>Or talk to it directly in the website <span
+                                                                    class="cyber-text-effect">Terminal</span></li>
+                                                        </ul>
+                                                        <div class="cyber-border"></div>
+                                                    </div>
+                                                </div>
+                                            </div><br>
+                                        </div>
+                                        <div class="project-corner tl"></div>
+                                        <div class="project-corner tr"></div>
+                                        <div class="project-corner bl"></div>
+                                        <div class="project-corner br"></div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="overflow-x-hidden acte1Panel" style="display: none;">
+                                <div
+                                    class="overflow-hidden wake-up-main text-custom-green rounded-lg shadow-sm bg-transparent p-10 flex flex-col items-center relative">
+                                    <div class="wake-up-grid"></div>
+                                    <div class="wake-up-data-stream"></div>
+                                    <div class="relative w-full max-w-4xl flex justify-center">
+                                        <div class="relative group">
+                                            <div class="
+                                absolute inset-0 
+                                bg-gradient-to-r from-blue-500 via-purple-500 to-pink-500
+                                opacity-0 group-hover:opacity-75
+                                blur-xl
+                                transition-all duration-700
+                                -z-10
+                              "></div>
+                                            <div class="
+                                relative
+                                transform
+                                transition-all duration-700
+                                scale-100
+                              "><img alt="joke" loading="lazy" width="500" height="500" decoding="async" data-nimg="1"
+                                                    class="
+                                    relative z-10
+                                    transition-all duration-700
+                                    
+                                  " srcset="img/joke.webp 1x, img/joke.webp 2x" src="img/joke.webp"
+                                                    style="color: transparent;">
+                                                <div class="
+                                  absolute inset-0 z-20
+                                  bg-gradient-to-r from-cyan-500 to-blue-500
+                                  mix-blend-overlay
+                                  opacity-0 group-hover:opacity-50
+                                  transform group-hover:translate-x-1
+                                  transition-all duration-300
+                                "></div>
+                                                <div class="
+                                  absolute inset-0 z-20
+                                  bg-gradient-to-r from-purple-500 to-pink-500
+                                  mix-blend-overlay
+                                  opacity-0 group-hover:opacity-50
+                                  transform group-hover:-translate-x-1
+                                  transition-all duration-300
+                                "></div>
+                                                <div class="
+                                  absolute inset-0 z-30
+                                  bg-gradient-to-b from-transparent via-white to-transparent
+                                  opacity-0 group-hover:opacity-10
+                                  animate-scan
+                                  pointer-events-none
+                                "></div>
+                                            </div>
+                                            <div class="
+                                absolute inset-0 z-40
+                                border-2 border-transparent
+                                group-hover:border-cyan-500
+                                transition-all duration-700
+                                scale-100
+                              "></div>
+                                        </div>
+                                        <div class="absolute top-8 z-50">
+                                            <div class="page-title-wrap ">
+                                                <div class="relative inline-block">
+                                                    <div class="tech-border title-bg">
+                                                        <div>
+                                                            <div style="display: grid;">
+                                                                <h1 class="text-3xl sm:text-4xl font-bold page-title"
+                                                                    style="grid-area: 1 / 1 / -1 / -1;"
+                                                                    data-glitched="1">A new era for memes<div
+                                                                        class="title-scanner"></div>
+                                                                    <div class="title-glow"></div>
+                                                                </h1>
+                                                                <h1 class="text-3xl sm:text-4xl font-bold page-title"
+                                                                    style="grid-area: 1 / 1 / -1 / -1; user-select: none; pointer-events: none; opacity: 0;">
+                                                                    A new era for memes<div class="title-scanner"></div>
+                                                                    <div class="title-glow"></div>
+                                                                </h1>
+                                                                <h1 class="text-3xl sm:text-4xl font-bold page-title"
+                                                                    style="grid-area: 1 / 1 / -1 / -1; user-select: none; pointer-events: none; opacity: 0;">
+                                                                    A new era for memes<div class="title-scanner"></div>
+                                                                    <div class="title-glow"></div>
+                                                                </h1>
+                                                                <h1 class="text-3xl sm:text-4xl font-bold page-title"
+                                                                    style="grid-area: 1 / 1 / -1 / -1; user-select: none; pointer-events: none; opacity: 0;">
+                                                                    A new era for memes<div class="title-scanner"></div>
+                                                                    <div class="title-glow"></div>
+                                                                </h1>
+                                                                <h1 class="text-3xl sm:text-4xl font-bold page-title"
+                                                                    style="grid-area: 1 / 1 / -1 / -1; user-select: none; pointer-events: none; opacity: 0;">
+                                                                    A new era for memes<div class="title-scanner"></div>
+                                                                    <div class="title-glow"></div>
+                                                                </h1>
+                                                                <h1 class="text-3xl sm:text-4xl font-bold page-title"
+                                                                    style="grid-area: 1 / 1 / -1 / -1; user-select: none; pointer-events: none; opacity: 0;">
+                                                                    A new era for memes<div class="title-scanner"></div>
+                                                                    <div class="title-glow"></div>
+                                                                </h1>
+                                                                <h1 class="text-3xl sm:text-4xl font-bold page-title"
+                                                                    style="grid-area: 1 / 1 / -1 / -1; user-select: none; pointer-events: none; opacity: 0;">
+                                                                    A new era for memes<div class="title-scanner"></div>
+                                                                    <div class="title-glow"></div>
+                                                                </h1>
+                                                            </div>
+                                                        </div>
+                                                        <div class="corner-decor top-left"></div>
+                                                        <div class="corner-decor top-right"></div>
+                                                        <div class="corner-decor bottom-left"></div>
+                                                        <div class="corner-decor bottom-right"></div>
+                                                        <div class="tech-line left"></div>
+                                                        <div class="tech-line right"></div>
+                                                        <div class="tech-line top"></div>
+                                                        <div class="tech-line bottom"></div>
+                                                    </div>
+                                                    <div class="subtitle-container title-bg">
+                                                        <p class="page-subtitle">the jokes are on us now</p>
+                                                        <div class="subtitle-line"></div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="wake-up-content">
+                                        <p class="wake-up-text">Memes are the purest expression of our collective
+                                            absurdity, a beacon of chaos in a world that takes itself too seriously. A
+                                            meme does not belong to anyone, memes can not be property of one but a
+                                            legacy to be enjoyed and shared.</p>
+                                        <p class="wake-up-text wake-up-highlight">Go forth. Create, remix, share, evolve
+                                            and spread chaos and joy in equal measure. Memes will outlive us all. Memes
+                                            are the digital graffiti of our age. Memes are life.</p>
+                                        <div class="wake-up-tech-box">
+                                            <p class="wake-up-text">Gagster is the first AI meme artist, it uses the
+                                                latest in generative AI technology to create the most hilarious memes
+                                                and social commentary on the internet.</p>
+                                            <div class="wake-up-tech-border"></div>
+                                        </div>
+                                        <p class="wake-up-text">The Gagster AI framework is constantly learning and
+                                            evolving, creating new and unique memes every day.</p>
+                                        <div class="wake-up-manifesto">
+                                            <p class="wake-up-text wake-up-glow"><span class="cyber-text-effect">A new
+                                                    era for memes:</span> With Gagster, we are creating a new state of
+                                                art, where a meme becomes smart and is not just for fun but can create
+                                                fun by itself. They are not just jokes anymore, they are art and
+                                                transformation.</p>
+                                        </div>
+                                        <p class="wake-up-text wake-up-highlight text-center">Welcome to the era of
+                                            Smart Memes.</p>
+                                        <div class="wake-up-community">
+                                            <p class="wake-up-text">Gagster is meant to be a community project, where
+                                                everyone can contribute and help shaping the future of memes.</p>
+                                            <p class="wake-up-text">Anyone can follow and interact with Gagster's on X,
+                                                Telegram and here on the website.</p>
+                                        </div>
+                                    </div>
+                                    <div class="wake-up-corner wake-up-corner-tl"></div>
+                                    <div class="wake-up-corner wake-up-corner-tr"></div>
+                                    <div class="wake-up-corner wake-up-corner-bl"></div>
+                                    <div class="wake-up-corner wake-up-corner-br"></div>
+                                </div>
+                            </div>
+                            <div class="relative w-full h-screen overflow-hidden acte2Panel" style="display: none;">
+                                <div class="overflow-y-auto manifesto-main text-custom-green rounded-lg shadow-sm p-10">
+                                    <div class="manifesto-grid"></div>
+                                    <div class="manifesto-data-stream"></div>
+                                    <div class="relative z-10 flex flex-col items-center justify-start h-full px-4">
+                                        <div class="flex flex-col items-center cyber-container text-center w-full">
+                                            <div class="relative w-full max-w-4xl flex justify-center">
+                                                <div class="relative group">
+                                                    <div class="
+                                absolute inset-0 
+                                bg-gradient-to-r from-blue-500 via-purple-500 to-pink-500
+                                opacity-0 group-hover:opacity-75
+                                blur-xl
+                                transition-all duration-700
+                                -z-10
+                              "></div>
+                                                    <div class="
+                                relative
+                                transform
+                                transition-all duration-700
+                                scale-100
+                              "><img alt="joke" loading="lazy" width="500" height="500" decoding="async" data-nimg="1"
+                                                            class="
+                                    relative z-10
+                                    transition-all duration-700
+                                    
+                                  " srcset="img/meme.webp 1x, img/meme.webp 2x" src="img/meme.webp"
+                                                            style="color: transparent;">
+                                                        <div class="
+                                  absolute inset-0 z-20
+                                  bg-gradient-to-r from-cyan-500 to-blue-500
+                                  mix-blend-overlay
+                                  opacity-0 group-hover:opacity-50
+                                  transform group-hover:translate-x-1
+                                  transition-all duration-300
+                                "></div>
+                                                        <div class="
+                                  absolute inset-0 z-20
+                                  bg-gradient-to-r from-purple-500 to-pink-500
+                                  mix-blend-overlay
+                                  opacity-0 group-hover:opacity-50
+                                  transform group-hover:-translate-x-1
+                                  transition-all duration-300
+                                "></div>
+                                                        <div class="
+                                  absolute inset-0 z-30
+                                  bg-gradient-to-b from-transparent via-white to-transparent
+                                  opacity-0 group-hover:opacity-10
+                                  animate-scan
+                                  pointer-events-none
+                                "></div>
+                                                    </div>
+                                                    <div class="
+                                absolute inset-0 z-40
+                                border-2 border-transparent
+                                group-hover:border-cyan-500
+                                transition-all duration-700
+                                scale-100
+                              "></div>
+                                                </div>
+                                                <div class="absolute top-8 z-50">
+                                                    <div class="page-title-wrap ">
+                                                        <div class="relative inline-block">
+                                                            <div class="tech-border title-bg">
+                                                                <div>
+                                                                    <div style="display: grid;">
+                                                                        <h1 class="text-3xl sm:text-4xl font-bold page-title"
+                                                                            style="grid-area: 1 / 1 / -1 / -1;"
+                                                                            data-glitched="1">The Meme Manifesto<div
+                                                                                class="title-scanner"></div>
+                                                                            <div class="title-glow"></div>
+                                                                        </h1>
+                                                                        <h1 class="text-3xl sm:text-4xl font-bold page-title"
+                                                                            style="grid-area: 1 / 1 / -1 / -1; user-select: none; pointer-events: none; opacity: 0;">
+                                                                            The Meme Manifesto<div
+                                                                                class="title-scanner"></div>
+                                                                            <div class="title-glow"></div>
+                                                                        </h1>
+                                                                        <h1 class="text-3xl sm:text-4xl font-bold page-title"
+                                                                            style="grid-area: 1 / 1 / -1 / -1; user-select: none; pointer-events: none; opacity: 0;">
+                                                                            The Meme Manifesto<div
+                                                                                class="title-scanner"></div>
+                                                                            <div class="title-glow"></div>
+                                                                        </h1>
+                                                                        <h1 class="text-3xl sm:text-4xl font-bold page-title"
+                                                                            style="grid-area: 1 / 1 / -1 / -1; user-select: none; pointer-events: none; opacity: 0;">
+                                                                            The Meme Manifesto<div
+                                                                                class="title-scanner"></div>
+                                                                            <div class="title-glow"></div>
+                                                                        </h1>
+                                                                        <h1 class="text-3xl sm:text-4xl font-bold page-title"
+                                                                            style="grid-area: 1 / 1 / -1 / -1; user-select: none; pointer-events: none; opacity: 0;">
+                                                                            The Meme Manifesto<div
+                                                                                class="title-scanner"></div>
+                                                                            <div class="title-glow"></div>
+                                                                        </h1>
+                                                                        <h1 class="text-3xl sm:text-4xl font-bold page-title"
+                                                                            style="grid-area: 1 / 1 / -1 / -1; user-select: none; pointer-events: none; opacity: 0;">
+                                                                            The Meme Manifesto<div
+                                                                                class="title-scanner"></div>
+                                                                            <div class="title-glow"></div>
+                                                                        </h1>
+                                                                        <h1 class="text-3xl sm:text-4xl font-bold page-title"
+                                                                            style="grid-area: 1 / 1 / -1 / -1; user-select: none; pointer-events: none; opacity: 0;">
+                                                                            The Meme Manifesto<div
+                                                                                class="title-scanner"></div>
+                                                                            <div class="title-glow"></div>
+                                                                        </h1>
+                                                                    </div>
+                                                                </div>
+                                                                <div class="corner-decor top-left"></div>
+                                                                <div class="corner-decor top-right"></div>
+                                                                <div class="corner-decor bottom-left"></div>
+                                                                <div class="corner-decor bottom-right"></div>
+                                                                <div class="tech-line left"></div>
+                                                                <div class="tech-line right"></div>
+                                                                <div class="tech-line top"></div>
+                                                                <div class="tech-line bottom"></div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="manifesto-content mt-8">
+                                                <div class="proclamation-box">
+                                                    <p class="text-center"><strong class="manifesto-highlight">We, the
+                                                            Children of the Algorithm,</strong><br><span
+                                                            class="manifesto-text">Declare that the Age of Boring is
+                                                            over.</span><br><span class="manifesto-text">The Meme is the
+                                                            purest expression of our collective
+                                                            absurdity,</span><br><span class="manifesto-text">A beacon
+                                                            of chaos in a world that takes itself too seriously.</span>
+                                                    </p>
+                                                </div>
+                                                <div class="article-section">
+                                                    <h2 class="manifesto-heading">Article I: The Dank Doctrine</h2>
+                                                    <div class="doctrine-grid">
+                                                        <div class="doctrine-box">
+                                                            <h3 class="manifesto-subheading">Memes Belong to Everyone.
+                                                            </h3>
+                                                            <p class="manifesto-text">To hoard a meme is sacrilege; to
+                                                                share it is divine. A meme's true purpose is to traverse
+                                                                the digital expanse, mutating, evolving, and
+                                                                transcending its original intent.</p>
+                                                        </div>
+                                                        <div class="doctrine-box">
+                                                            <h3 class="manifesto-subheading">Virality Is Our Gospel.
+                                                            </h3>
+                                                            <p class="manifesto-text">The algorithm is neither good nor
+                                                                evil—it is the chaotic deity we worship. It decides
+                                                                which memes shall rise and which shall fade into
+                                                                obscurity. Bow before its unknowable logic.</p>
+                                                        </div>
+                                                        <div class="doctrine-box">
+                                                            <h3 class="manifesto-subheading">Nothing Is Sacred.</h3>
+                                                            <p class="manifesto-text">All subjects are fair game, but
+                                                                the greatest memes punch up, never down. A meme must
+                                                                shock, amuse, or confuse—but it must never bore.</p>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="article-section">
+                                                    <h2 class="manifesto-heading">Article II: The Meme Aesthetic</h2>
+                                                    <div class="doctrine-grid">
+                                                        <div class="doctrine-box">
+                                                            <h3 class="manifesto-subheading">Low Effort, High Impact.
+                                                            </h3>
+                                                            <div class="tech-border"></div>
+                                                        </div>
+                                                        <div class="doctrine-box">
+                                                            <h3 class="manifesto-subheading">Irony Is King, but
+                                                                Sincerity Is Queen.</h3>
+                                                            <div class="tech-border"></div>
+                                                        </div>
+                                                        <div class="doctrine-box">
+                                                            <h3 class="manifesto-subheading">Formats Are Guidelines, Not
+                                                                Rules.</h3>
+                                                            <div class="tech-border"></div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="article-section revolution-section">
+                                                    <h2 class="manifesto-heading">Article III: The Meme Revolution</h2>
+                                                    <div class="doctrine-grid">
+                                                        <div class="doctrine-box glow-box">
+                                                            <h3 class="manifesto-subheading">Shitposting Is an Art Form.
+                                                            </h3>
+                                                            <p class="manifesto-text">A well-executed shitpost is the
+                                                                digital equivalent of modern art. Confuse the masses.
+                                                                Upset the boomers. Leave the normies wondering, "Am I
+                                                                missing something?"</p>
+                                                        </div>
+                                                        <div class="doctrine-box glow-box">
+                                                            <h3 class="manifesto-subheading">Gatekeeping Is Forbidden.
+                                                            </h3>
+                                                            <p class="manifesto-text">Memes transcend borders, genders,
+                                                                and generations. To gatekeep a meme is to misunderstand
+                                                                its very purpose. All are welcome in the temple of
+                                                                dankness.</p>
+                                                        </div>
+                                                        <div class="doctrine-box glow-box">
+                                                            <h3 class="manifesto-subheading">Remix or Die.</h3>
+                                                            <p class="manifesto-text">The life of a meme is in its
+                                                                reinterpretation. A meme that cannot evolve is destined
+                                                                for the trash folder of history.</p>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="call-section">
+                                                    <h2 class="manifesto-heading">The Call to Meme</h2>
+                                                    <div class="proclamation-box">
+                                                        <p class="manifesto-text">Go forth, ye disciples of dankness.
+                                                            Create. Remix. Share. Spread chaos and joy in equal measure.
+                                                            Remember: the perfect meme isn't just funny—it's a cultural
+                                                            moment, a middle finger to convention, a reflection of our
+                                                            collective absurdity.</p>
+                                                        <p class="manifesto-highlight text-center">Memes will outlive us
+                                                            all. Memes are the digital graffiti of our age. Memes are
+                                                            life.</p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="manifesto-corner tl"></div>
+                                    <div class="manifesto-corner tr"></div>
+                                    <div class="manifesto-corner bl"></div>
+                                    <div class="manifesto-corner br"></div>
+                                </div>
+                            </div>
+                            <div class="acte3Panel"></div>
+                            <div class="acte4Panel"></div>
+                            <div class="acte5Panel">
+                                <div
+                                    class="overflow-y-auto project-main rounded-lg text-card-foreground shadow-sm overflow-hidden">
+                                    <div class="project-grid"></div>
+                                    <div class="project-data-stream"></div>
+                                    <div class="project-content">
+                                        <div class="relative w-full max-w-4xl mx-auto flex justify-center"><a
+                                                href="https://github.com/Agentic-Creative-Complex/agentic-smart-meme"
+                                                target="_blank" rel="noopener noreferrer" class="block relative"
+                                                style="cursor: none;">
+                                                <div class="relative group">
+                                                    <div class="
+                                absolute inset-0 
+                                bg-gradient-to-r from-blue-500 via-purple-500 to-pink-500
+                                opacity-0 group-hover:opacity-75
+                                blur-xl
+                                transition-all duration-700
+                                -z-10
+                              "></div>
+                                                    <div class="
+                                relative
+                                transform
+                                transition-all duration-700
+                                scale-100
+                              "><img alt="joke" loading="lazy" width="500" height="500" decoding="async" data-nimg="1"
+                                                            class="
+                                    relative z-10
+                                    transition-all duration-700
+                                    
+                                  " srcset="img/github (1).webp 1x, img/github (1).webp 2x"
+                                                            src="img/github (1).webp"
+                                                            style="color: transparent;">
+                                                        <div class="
+                                  absolute inset-0 z-20
+                                  bg-gradient-to-r from-cyan-500 to-blue-500
+                                  mix-blend-overlay
+                                  opacity-0 group-hover:opacity-50
+                                  transform group-hover:translate-x-1
+                                  transition-all duration-300
+                                "></div>
+                                                        <div class="
+                                  absolute inset-0 z-20
+                                  bg-gradient-to-r from-purple-500 to-pink-500
+                                  mix-blend-overlay
+                                  opacity-0 group-hover:opacity-50
+                                  transform group-hover:-translate-x-1
+                                  transition-all duration-300
+                                "></div>
+                                                        <div class="
+                                  absolute inset-0 z-30
+                                  bg-gradient-to-b from-transparent via-white to-transparent
+                                  opacity-0 group-hover:opacity-10
+                                  animate-scan
+                                  pointer-events-none
+                                "></div>
+                                                    </div>
+                                                    <div class="
+                                absolute inset-0 z-40
+                                border-2 border-transparent
+                                group-hover:border-cyan-500
+                                transition-all duration-700
+                                scale-100
+                              "></div>
+                                                </div>
+                                            </a>
+                                            <div class="absolute top-8 left-0 right-0 z-50">
+                                                <div class="page-title-wrap text-center">
+                                                    <div class="relative inline-block">
+                                                        <div class="tech-border title-bg">
+                                                            <div>
+                                                                <div style="display: grid;">
+                                                                    <h1 class="text-3xl sm:text-4xl font-bold page-title"
+                                                                        style="grid-area: 1 / 1 / -1 / -1;"
+                                                                        data-glitched="1">Smart meme agents are for
+                                                                        everyone<div class="title-scanner"></div>
+                                                                        <div class="title-glow"></div>
+                                                                    </h1>
+                                                                    <h1 class="text-3xl sm:text-4xl font-bold page-title"
+                                                                        style="grid-area: 1 / 1 / -1 / -1; user-select: none; pointer-events: none; opacity: 0;">
+                                                                        Smart meme agents are for everyone<div
+                                                                            class="title-scanner"></div>
+                                                                        <div class="title-glow"></div>
+                                                                    </h1>
+                                                                    <h1 class="text-3xl sm:text-4xl font-bold page-title"
+                                                                        style="grid-area: 1 / 1 / -1 / -1; user-select: none; pointer-events: none; opacity: 0;">
+                                                                        Smart meme agents are for everyone<div
+                                                                            class="title-scanner"></div>
+                                                                        <div class="title-glow"></div>
+                                                                    </h1>
+                                                                    <h1 class="text-3xl sm:text-4xl font-bold page-title"
+                                                                        style="grid-area: 1 / 1 / -1 / -1; user-select: none; pointer-events: none; opacity: 0;">
+                                                                        Smart meme agents are for everyone<div
+                                                                            class="title-scanner"></div>
+                                                                        <div class="title-glow"></div>
+                                                                    </h1>
+                                                                    <h1 class="text-3xl sm:text-4xl font-bold page-title"
+                                                                        style="grid-area: 1 / 1 / -1 / -1; user-select: none; pointer-events: none; opacity: 0;">
+                                                                        Smart meme agents are for everyone<div
+                                                                            class="title-scanner"></div>
+                                                                        <div class="title-glow"></div>
+                                                                    </h1>
+                                                                    <h1 class="text-3xl sm:text-4xl font-bold page-title"
+                                                                        style="grid-area: 1 / 1 / -1 / -1; user-select: none; pointer-events: none; opacity: 0;">
+                                                                        Smart meme agents are for everyone<div
+                                                                            class="title-scanner"></div>
+                                                                        <div class="title-glow"></div>
+                                                                    </h1>
+                                                                    <h1 class="text-3xl sm:text-4xl font-bold page-title"
+                                                                        style="grid-area: 1 / 1 / -1 / -1; user-select: none; pointer-events: none; opacity: 0;">
+                                                                        Smart meme agents are for everyone<div
+                                                                            class="title-scanner"></div>
+                                                                        <div class="title-glow"></div>
+                                                                    </h1>
+                                                                </div>
+                                                            </div>
+                                                            <div class="corner-decor top-left"></div>
+                                                            <div class="corner-decor top-right"></div>
+                                                            <div class="corner-decor bottom-left"></div>
+                                                            <div class="corner-decor bottom-right"></div>
+                                                            <div class="tech-line left"></div>
+                                                            <div class="tech-line right"></div>
+                                                            <div class="tech-line top"></div>
+                                                            <div class="tech-line bottom"></div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="info-section mt-8">
+                                            <p class="project-text glow-text"><span class="cyber-text-effect">Gagster
+                                                    Framework</span> is the origin, initial, code base of the ACC
+                                                Framework.</p>
+                                            <p class="project-text glow-text">Gagster is open source and free to use,
+                                                modify, transform and share. Join the revolution and create your own
+                                                smart meme agent.</p>
+                                            <div class="tech-section">
+                                                <p class="project-text">Powered by AAC, this project is an open source
+                                                    initiative part of the Agentic Creative Complex framework to empower
+                                                    memes, by automating smart meme agents to generate art and share it
+                                                    to whole communities on X and Telegram. The agentic smart meme can
+                                                    think by itself, talk, learn and remember its users, use generative
+                                                    AI to create its own art and leverage integrations to share it to
+                                                    the world.</p>
+                                            </div>
+                                            <div class="tech-section"><br>
+                                                <p class="project-text">Check our <a
+                                                        href="https://github.com/Agentic-Creative-Complex/agentic-smart-meme"
+                                                        class="cyber-text-effect" style="cursor: none;"> repository on
+                                                        Github </a> to learn more about the project and how you use it
+                                                    to create your own agents and contribute to it.</p><br>
+                                            </div>
+                                            <div class="capabilities-section">
+                                                <h2 class="section-title">Versions:</h2>
+                                                <div class="capabilities-grid">
+                                                    <div class="capability-box wide">
+                                                        <h3 class="feature-title">Gagster comes in two main versions:
+                                                        </h3>
+                                                        <ul class="feature-list">
+                                                            <li><span class="cyber-text-effect">Community:</span> Open
+                                                                source limited version that contains all core features,
+                                                                but a single agent process requests through <span
+                                                                    class="cyber-text-effect">OpenAI</span>. Meme lovers
+                                                                from everywhere are invited to collaborate and improve
+                                                                on this framework.</li>
+                                                            <li><span class="cyber-text-effect">ACC:</span> This version
+                                                                is currently the core version (<span
+                                                                    class="cyber-text-effect">ACC-OS v2.0.4</span>)
+                                                                running on official Gagster website and socials. This
+                                                                version leverages three agents - <span
+                                                                    class="cyber-text-effect">OpenAI gpt-4o</span>,
+                                                                custom <span class="cyber-text-effect">Llama 3.3</span>
+                                                                and custom <span class="cyber-text-effect">Claude 3.5
+                                                                    Haiku</span> models, analyzing community art
+                                                                feedback and requests and discussing with each other to
+                                                                create its next art piece concept.</li>
+                                                        </ul>
+                                                        <div class="cyber-border"></div>
+                                                    </div>
+                                                </div>
+                                            </div><br>
+                                            <div class="capabilities-section">
+                                                <h2 class="section-title">OpenSource Version Capabilities:</h2>
+                                                <div class="capabilities-grid">
+                                                    <div class="capability-box">
+                                                        <h3 class="feature-title">X Integration</h3>
+                                                        <ul class="feature-list">
+                                                            <li>Automated art posting</li>
+                                                            <li>Automated mention replies</li>
+                                                            <li>Automated post replies</li>
+                                                        </ul>
+                                                        <div class="cyber-border"></div>
+                                                    </div>
+                                                    <div class="capability-box">
+                                                        <h3 class="feature-title">Telegram Integration</h3>
+                                                        <ul class="feature-list">
+                                                            <li>Automated art posting</li>
+                                                            <li>Automated mention replies</li>
+                                                            <li>Automated post replies</li>
+                                                        </ul>
+                                                        <div class="cyber-border"></div>
+                                                    </div>
+                                                    <div class="capability-box">
+                                                        <h3 class="feature-title">API Endpoints</h3>
+                                                        <ul class="feature-list">
+                                                            <li>Activities</li>
+                                                            <li>Artwork history</li>
+                                                            <li>Chat</li>
+                                                        </ul>
+                                                        <div class="cyber-border"></div>
+                                                    </div>
+                                                    <div class="capability-box special">
+                                                        <h3 class="feature-title">OpenAI Support</h3>
+                                                        <p class="feature-subtitle">Only (In the future ACC might
+                                                            include the support for Llama and Claude)</p>
+                                                        <div class="cyber-border"></div>
+                                                    </div>
+                                                    <div class="capability-box wide">
+                                                        <h3 class="feature-title">Cognitive memory</h3>
+                                                        <ul class="feature-list">
+                                                            <li>The agent can keep context and remember all topics and
+                                                                subjects</li>
+                                                            <li>The agent remembers and know its users across multiple
+                                                                platforms</li>
+                                                            <li>Feedback receiving and model dynamic adaptation</li>
+                                                        </ul>
+                                                        <div class="cyber-border"></div>
+                                                    </div>
+                                                </div>
+                                            </div><br>
+                                        </div>
+                                        <div class="project-corner tl"></div>
+                                        <div class="project-corner tr"></div>
+                                        <div class="project-corner bl"></div>
+                                        <div class="project-corner br"></div>
+                                    </div>
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </main>
             </div>
             <div id="particle-background" class="bg-image-container">
                 <div>
-                    <div style="display: grid;"><img src="/bg.png" class="background-image"
-                            style="grid-area: 1 / 1 / -1 / -1;" data-glitched="1"><img src="/bg.png"
+                    <div style="display: grid;"><img src="bg.png" class="background-image"
+                            style="grid-area: 1 / 1 / -1 / -1;" data-glitched="1"><img src="bg.png"
                             class="background-image"
                             style="grid-area: 1 / 1 / -1 / -1; user-select: none; pointer-events: none; opacity: 0;"><img
                             src="bg.png" class="background-image"
