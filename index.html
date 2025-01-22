@@ -1180,27 +1180,54 @@
             border-radius: 50%;
             z-index: 9999;
             transition: .2s ease;
+            pointer-events: none; /* Empêche les interactions */
             opacity: 1;
         }
-        .nav-option:hover ~ .costum-cursor-before {
-            transform: scale(2.5);
-        }
+        
     </style>
 
     <Script>
-        document.addEventListener('DOMContentLoaded', function(){
-            let cursor = document.querySelector('.costum-cursor');
-            let cursorBefore = document.querySelector('.costum-cursor-before');
-            document.addEventListener('mousemove', function(e){
+        document.addEventListener('DOMContentLoaded', function () {
+            const cursor = document.querySelector('.costum-cursor');
+            const cursorBefore = document.querySelector('.costum-cursor-before');
+            const mouseHoverTrans = document.querySelectorAll('.mouseHoverTrans');
+               // Sélectionnez toutes les nav-options
+            const navOptions = document.querySelectorAll('.nav-option');
+
+            // Mise à jour de la position des curseurs
+            document.addEventListener('mousemove', function (e) {
                 cursor.style.left = e.clientX + 'px';
                 cursor.style.top = e.clientY + 'px';
                 cursorBefore.style.left = e.clientX + 'px';
                 cursorBefore.style.top = e.clientY + 'px';
             });
 
+            // Écoute des événements sur chaque nav-option
+            mouseHoverTrans.forEach(option => {
+                option.addEventListener('mouseenter', function () {
+                    cursorBefore.style.transform = 'scale(5)';
+                    cursor.style.transform = 'scale(0.5)';
+                });
+
+                option.addEventListener('mouseleave', function () {
+                    cursorBefore.style.transform = 'scale(1)';
+                    cursor.style.transform = 'scale(1)';
+                });
+            });
+
+             // Ajouter un gestionnaire d'événement à chaque option
+            navOptions.forEach(option => {
+                option.addEventListener('click', function () {
+                    // Retirer la classe active de toutes les options
+                    navOptions.forEach(opt => opt.classList.remove('nav-option-active-active'));
+
+                    // Ajouter la classe active à l'élément cliqué
+                    this.classList.add('nav-option-active-active');
+                });
+            });
         });
-            
     </Script>
+    
 </head>
 
 <body style="cursor: none;">
@@ -1253,19 +1280,19 @@
                                 </div>
                             </div>
                             <div class="nav-options-list flex flex-col gap-1">
-                                <p class="nav-option nav-option-active" id="About"><a style="cursor: none;">About</a>
+                                <p class="nav-option  nav-option-active mouseHoverTrans" id="About"><a style="cursor: none;">About</a>
                                 </p>
-                                <p class="nav-option " id="How does it work?"><a style="cursor: none;">How does it
+                                <p class="nav-option mouseHoverTrans" id="How does it work?"><a style="cursor: none;">How does it
                                         work?</a></p>
-                                <p class="nav-option " id="Act 1: The call to meme"><a style="cursor: none;">Act 1: The
+                                <p class="nav-option mouseHoverTrans" id="Act 1: The call to meme"><a style="cursor: none;">Act 1: The
                                         call to meme</a></p>
-                                <p class="nav-option " id="Act 2: The manifesto"><a style="cursor: none;">Act 2: The
+                                <p class="nav-option mouseHoverTrans" id="Act 2: The manifesto"><a style="cursor: none;">Act 2: The
                                         manifesto</a></p>
-                                <p class="nav-option " id="Act 3: AI mind ignited"><a style="cursor: none;">Act 3: AI
+                                <p class="nav-option mouseHoverTrans" id="Act 3: AI mind ignited"><a style="cursor: none;">Act 3: AI
                                         mind ignited</a></p>
-                                <p class="nav-option " id="Act 4: Creation or Creator?"><a style="cursor: none;">Act 4:
+                                <p class="nav-option mouseHoverTrans" id="Act 4: Creation or Creator?"><a style="cursor: none;">Act 4:
                                         Creation or Creator?</a></p>
-                                <p class="nav-option " id="Act 5: Revolution started"><a style="cursor: none;">Act 5:
+                                <p class="nav-option mouseHoverTrans" id="Act 5: Revolution started"><a style="cursor: none;">Act 5:
                                         Revolution started</a></p>
                             </div>
                             <div class="jsx-10954e4d1ea1b7d9 w-full py-8 relative">
@@ -1274,7 +1301,7 @@
                                         <div
                                             class="jsx-10954e4d1ea1b7d9 relative flex items-center justify-center gap-4">
                                             <a href="https://x.com/GagsterAgent" target="_blank"
-                                                rel="noopener noreferrer" class="jsx-10954e4d1ea1b7d9 group relative"
+                                                rel="noopener noreferrer" class="jsx-10954e4d1ea1b7d9 group relative mouseHoverTrans"
                                                 style="cursor: none;">
                                                 <div class="jsx-10954e4d1ea1b7d9 absolute top-1/2 left-full w-4 h-px bg-custom-green/30 
                     opacity-30
@@ -1303,7 +1330,7 @@
                                                         class="jsx-10954e4d1ea1b7d9 text-custom-green text-sm font-medium group-hover:text-shadow-green">Twitter</span>
                                                 </div>
                                             </a><a href="https://t.me/gagsterai" target="_blank"
-                                                rel="noopener noreferrer" class="jsx-10954e4d1ea1b7d9 group relative"
+                                                rel="noopener noreferrer" class="jsx-10954e4d1ea1b7d9 group relative mouseHoverTrans"
                                                 style="cursor: none;">
                                                 <div class="jsx-10954e4d1ea1b7d9 absolute top-1/2 left-full w-4 h-px bg-custom-green/30 
                     opacity-30
@@ -1332,7 +1359,7 @@
                                                         class="jsx-10954e4d1ea1b7d9 text-custom-green text-sm font-medium group-hover:text-shadow-green">Telegram</span>
                                                 </div>
                                             </a><a href="https://pump.fun" target="_blank" rel="noopener noreferrer"
-                                                class="jsx-10954e4d1ea1b7d9 group relative" style="cursor: none;">
+                                                class="jsx-10954e4d1ea1b7d9 group relative mouseHoverTrans" style="cursor: none;">
                                                 <div class="jsx-10954e4d1ea1b7d9 absolute top-1/2 left-full w-4 h-px bg-custom-green/30 
                     opacity-30
                     transition-all duration-300">
@@ -1361,7 +1388,7 @@
                                                         Fun</span></div>
                                             </a><a href="https://github.com/Agentic-Creative-Complex/agentic-smart-meme"
                                                 target="_blank" rel="noopener noreferrer"
-                                                class="jsx-10954e4d1ea1b7d9 group relative" style="cursor: none;">
+                                                class="jsx-10954e4d1ea1b7d9 group relative mouseHoverTrans" style="cursor: none;">
                                                 <div class="jsx-10954e4d1ea1b7d9 relative w-12 h-12">
                                                     <div class="jsx-10954e4d1ea1b7d9 absolute inset-0 rounded-full bg-custom-green/20 blur-xl transform scale-0 
                     group-hover:scale-150 transition-transform duration-300"></div>
@@ -1386,7 +1413,7 @@
                                         </div>
                                         <div
                                             class="jsx-10954e4d1ea1b7d9 relative flex items-center justify-center gap-4 py-8">
-                                            <a href="https://t.me/GagsterAi_bot" class="jsx-10954e4d1ea1b7d9"
+                                            <a href="https://t.me/GagsterAi_bot" class="jsx-10954e4d1ea1b7d9 mouseHoverTrans"
                                                 style="cursor: none;"><button
                                                     class="chat-cyber-button w-full relative overflow-hidden group bg-[#20452f] transform-gpu  transition-all duration-300 ease-in-out hover:-translate-y-0.5 active:translate-y-0.5"
                                                     style="cursor: none;">
@@ -1484,7 +1511,7 @@
                                         class="absolute bottom-0 right-0 w-3 h-3 border-b-2 border-r-2 border-[#4AFF91] chat-corner-glow">
                                     </div>
                                     <div class="relative flex items-center justify-between px-6 py-4 z-10"><span
-                                            class="text-xl font-bold text-[#4AFF91] group-hover:text-[#4AFF91] transition-colors duration-300 flex items-center tracking-wider">GAGSTER
+                                            class="text-xl font-bold text-[#4AFF91] group-hover:text-[#4AFF91] transition-colors duration-300 flex items-center tracking-wider mouseHoverTrans">GAGSTER
                                             TERMINAL<span class="chat-text-flicker ml-2">_</span></span><span class="transition-all duration-300 text-[#4AFF91]
               chat-float">▲</span></div>
                                     <div class="absolute inset-x-0 bottom-0 h-[2px] chat-energy-line"></div>
@@ -1508,36 +1535,7 @@
                                                                 Welcome to Gagster!<div class="title-scanner"></div>
                                                                 <div class="title-glow"></div>
                                                             </h1>
-                                                            <h1 class="text-3xl sm:text-4xl font-bold page-title"
-                                                                style="grid-area: 1 / 1 / -1 / -1; user-select: none; pointer-events: none; opacity: 0;">
-                                                                Welcome to Gagster!<div class="title-scanner"></div>
-                                                                <div class="title-glow"></div>
-                                                            </h1>
-                                                            <h1 class="text-3xl sm:text-4xl font-bold page-title"
-                                                                style="grid-area: 1 / 1 / -1 / -1; user-select: none; pointer-events: none; opacity: 0;">
-                                                                Welcome to Gagster!<div class="title-scanner"></div>
-                                                                <div class="title-glow"></div>
-                                                            </h1>
-                                                            <h1 class="text-3xl sm:text-4xl font-bold page-title"
-                                                                style="grid-area: 1 / 1 / -1 / -1; user-select: none; pointer-events: none; opacity: 0;">
-                                                                Welcome to Gagster!<div class="title-scanner"></div>
-                                                                <div class="title-glow"></div>
-                                                            </h1>
-                                                            <h1 class="text-3xl sm:text-4xl font-bold page-title"
-                                                                style="grid-area: 1 / 1 / -1 / -1; user-select: none; pointer-events: none; opacity: 0;">
-                                                                Welcome to Gagster!<div class="title-scanner"></div>
-                                                                <div class="title-glow"></div>
-                                                            </h1>
-                                                            <h1 class="text-3xl sm:text-4xl font-bold page-title"
-                                                                style="grid-area: 1 / 1 / -1 / -1; user-select: none; pointer-events: none; opacity: 0;">
-                                                                Welcome to Gagster!<div class="title-scanner"></div>
-                                                                <div class="title-glow"></div>
-                                                            </h1>
-                                                            <h1 class="text-3xl sm:text-4xl font-bold page-title"
-                                                                style="grid-area: 1 / 1 / -1 / -1; user-select: none; pointer-events: none; opacity: 0;">
-                                                                Welcome to Gagster!<div class="title-scanner"></div>
-                                                                <div class="title-glow"></div>
-                                                            </h1>
+                                                           
                                                         </div>
                                                     </div>
                                                     <div class="corner-decor top-left"></div>
@@ -1582,7 +1580,7 @@
                                                         class="relative flex items-center justify-center gap-4 mb-12 cta-display">
                                                         <a href="https://x.com/GagsterAgent"
                                                             style="cursor: none;"><button
-                                                                class="chat-cyber-button w-full relative overflow-hidden group bg-[#20452f] transform-gpu  transition-all duration-300 ease-in-out hover:-translate-y-0.5 active:translate-y-0.5"
+                                                                class="chat-cyber-button w-full relative overflow-hidden group bg-[#20452f] transform-gpu  transition-all duration-300 ease-in-out hover:-translate-y-0.5 active:translate-y-0.5 mouseHoverTrans"
                                                                 style="cursor: none;">
                                                                 <div
                                                                     class="absolute inset-0 bg-gradient-to-r from-[#4AFF91]/10 to-transparent opacity-0 group-hover:opacity-100 transition-all duration-500">
@@ -1613,7 +1611,7 @@
                                                                 </div>
                                                             </button></a><a href="https://t.me/gagsterai"
                                                             style="cursor: none;"><button
-                                                                class="chat-cyber-button w-full relative overflow-hidden group bg-[#20452f] transform-gpu  transition-all duration-300 ease-in-out hover:-translate-y-0.5 active:translate-y-0.5"
+                                                                class="chat-cyber-button w-full relative overflow-hidden group bg-[#20452f] transform-gpu  transition-all duration-300 ease-in-out hover:-translate-y-0.5 active:translate-y-0.5 mouseHoverTrans"
                                                                 style="cursor: none;">
                                                                 <div
                                                                     class="absolute inset-0 bg-gradient-to-r from-[#4AFF91]/10 to-transparent opacity-0 group-hover:opacity-100 transition-all duration-500">
@@ -1645,7 +1643,7 @@
                                                             </button></a><a
                                                             href="https://pump.fun/coin/8dgUbHppPrkE5b4dXo8yvL3jxNC5gd21w7GzrJSMpump"
                                                             style="cursor: none;"><button
-                                                                class="chat-cyber-button w-full relative overflow-hidden group bg-[#20452f] transform-gpu  transition-all duration-300 ease-in-out hover:-translate-y-0.5 active:translate-y-0.5"
+                                                                class="chat-cyber-button w-full relative overflow-hidden group bg-[#20452f] transform-gpu  transition-all duration-300 ease-in-out hover:-translate-y-0.5 active:translate-y-0.5 mouseHoverTrans"
                                                                 style="cursor: none;">
                                                                 <div
                                                                     class="absolute inset-0 bg-gradient-to-r from-[#4AFF91]/10 to-transparent opacity-0 group-hover:opacity-100 transition-all duration-500">
@@ -1680,7 +1678,7 @@
                                                         class="relative flex items-center justify-center gap-4 mb-12 cta-display">
                                                         <a href="https://github.com/Agentic-Creative-Complex/agentic-smart-meme"
                                                             style="cursor: none;"><button
-                                                                class="chat-cyber-button w-full relative overflow-hidden group bg-[#20452f] transform-gpu  transition-all duration-300 ease-in-out hover:-translate-y-0.5 active:translate-y-0.5"
+                                                                class="chat-cyber-button w-full relative overflow-hidden group bg-[#20452f] transform-gpu  transition-all duration-300 ease-in-out hover:-translate-y-0.5 active:translate-y-0.5 mouseHoverTrans"
                                                                 style="cursor: none;">
                                                                 <div
                                                                     class="absolute inset-0 bg-gradient-to-r from-[#4AFF91]/10 to-transparent opacity-0 group-hover:opacity-100 transition-all duration-500">
@@ -1711,7 +1709,7 @@
                                                                 </div>
                                                             </button></a><a href="https://creativecomplex.io/"
                                                             style="cursor: none;"><button
-                                                                class="chat-cyber-button w-full relative overflow-hidden group bg-[#20452f] transform-gpu  transition-all duration-300 ease-in-out hover:-translate-y-0.5 active:translate-y-0.5"
+                                                                class="chat-cyber-button w-full relative overflow-hidden group bg-[#20452f] transform-gpu  transition-all duration-300 ease-in-out hover:-translate-y-0.5 active:translate-y-0.5 mouseHoverTrans"
                                                                 style="cursor: none;">
                                                                 <div
                                                                     class="absolute inset-0 bg-gradient-to-r from-[#4AFF91]/10 to-transparent opacity-0 group-hover:opacity-100 transition-all duration-500">
@@ -1820,33 +1818,33 @@
                             style="grid-area: 1 / 1 / -1 / -1;" data-glitched="1"><img src="/bg.png"
                             class="background-image"
                             style="grid-area: 1 / 1 / -1 / -1; user-select: none; pointer-events: none; opacity: 0;"><img
-                            src="/bg.png" class="background-image"
+                            src="bg.png" class="background-image"
                             style="grid-area: 1 / 1 / -1 / -1; user-select: none; pointer-events: none; opacity: 0;"><img
-                            src="/bg.png" class="background-image"
+                            src="bg.png" class="background-image"
                             style="grid-area: 1 / 1 / -1 / -1; user-select: none; pointer-events: none; opacity: 0;"><img
-                            src="/bg.png" class="background-image"
+                            src="bg.png" class="background-image"
                             style="grid-area: 1 / 1 / -1 / -1; user-select: none; pointer-events: none; opacity: 0;"><img
-                            src="/bg.png" class="background-image"
+                            src="bg.png" class="background-image"
                             style="grid-area: 1 / 1 / -1 / -1; user-select: none; pointer-events: none; opacity: 0;"><img
-                            src="/bg.png" class="background-image"
+                            src="bg.png" class="background-image"
                             style="grid-area: 1 / 1 / -1 / -1; user-select: none; pointer-events: none; opacity: 0;"><img
-                            src="/bg.png" class="background-image"
+                            src="bg.png" class="background-image"
                             style="grid-area: 1 / 1 / -1 / -1; user-select: none; pointer-events: none; opacity: 0;"><img
-                            src="/bg.png" class="background-image"
+                            src="bg.png" class="background-image"
                             style="grid-area: 1 / 1 / -1 / -1; user-select: none; pointer-events: none; opacity: 0;"><img
-                            src="/bg.png" class="background-image"
+                            src="bg.png" class="background-image"
                             style="grid-area: 1 / 1 / -1 / -1; user-select: none; pointer-events: none; opacity: 0;"><img
-                            src="/bg.png" class="background-image"
+                            src="bg.png" class="background-image"
                             style="grid-area: 1 / 1 / -1 / -1; user-select: none; pointer-events: none; opacity: 0;"><img
-                            src="/bg.png" class="background-image"
+                            src="bg.png" class="background-image"
                             style="grid-area: 1 / 1 / -1 / -1; user-select: none; pointer-events: none; opacity: 0;"><img
-                            src="/bg.png" class="background-image"
+                            src="bg.png" class="background-image"
                             style="grid-area: 1 / 1 / -1 / -1; user-select: none; pointer-events: none; opacity: 0;"><img
-                            src="/bg.png" class="background-image"
+                            src="bg.png" class="background-image"
                             style="grid-area: 1 / 1 / -1 / -1; user-select: none; pointer-events: none; opacity: 0;"><img
-                            src="/bg.png" class="background-image"
+                            src="bg.png" class="background-image"
                             style="grid-area: 1 / 1 / -1 / -1; user-select: none; pointer-events: none; opacity: 0;"><img
-                            src="/bg.png" class="background-image"
+                            src="bg.png" class="background-image"
                             style="grid-area: 1 / 1 / -1 / -1; user-select: none; pointer-events: none; opacity: 0;">
                     </div>
                 </div>
