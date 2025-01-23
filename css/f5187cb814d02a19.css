@@ -2700,6 +2700,7 @@ body {
 }
 
 .text-red-500 {
+    display: none;
     --tw-text-opacity: 1;
     color: rgb(239 68 68/var(--tw-text-opacity))
 }
@@ -3648,6 +3649,7 @@ body {
 }
 
 .fading-right {
+    display: none;
     -webkit-mask: linear-gradient(270deg, hsla(0, 0%, 100%, 0) 1%, #fff 3%)
 }
 
@@ -3995,5 +3997,39 @@ body {
 .__className_0f05b8 {
     font-family: __Orbitron_0f05b8, __Orbitron_Fallback_0f05b8;
     font-weight: 400;
-    font-style: normal
+    font-style: normal;
+}
+
+.relative1 {
+    position: relative;
+    cursor: pointer;
+}
+
+.absolute1 {
+    position: absolute;
+}
+.w-full1 {
+    width: 100%;
+    height: 100vh;
+}
+
+.text-purple-400 {
+    --tw-text-opacity: 1;
+    color: rgb(192 132 252 / var(--tw-text-opacity, 1));
+}
+
+.hover\:text-pink-400:hover {
+    --tw-text-opacity: 1;
+    color: rgb(244 114 182/var(--tw-text-opacity, 1))
+}
+
+.hover\:text-pink-500:hover {
+    --tw-text-opacity: 1;
+    color: rgb(236 72 153/var(--tw-text-opacity, 1))
+}
+
+.transition-colors {
+    transition-property: color, background-color, border-color, text-decoration-color, fill, stroke;
+    transition-timing-function: cubic-bezier(.4, 0, .2, 1);
+    transition-duration: .15s;
 }

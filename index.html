@@ -24,10 +24,30 @@
         <script src="js/index-c90971b778271e09.js" defer="" crossorigin=""></script>
         <script src="js/_buildManifest.js" defer="" crossorigin=""></script>
         <script src="js/_ssgManifest.js" defer="" crossorigin=""></script>
+        <script src="js/panel.js"></script>
 </head>
 
 <body>
-    <div id="__next">
+    <div class="relative1 w-full1 h-screen overflow-hidden loader">
+        <div class="absolute1 inset-0 w-full h-full"><video autoPlay="" loop="" muted="" playsInline=""
+                class="object-cover w-full1 h-full">
+                <source src="img/video.mp4" type="video/mp4" />Your browser does not support the video tag.
+            </video></div>
+        <div class="absolute1 top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 cursor-pointer font-mono loader-text">
+            <pre
+                class="text-purple-400 hover:text-pink-500 transition-colors duration-300 text-center whitespace-pre text-xs">
+
+    █████  ███    ██  █████  ██      ██████   █████  ████████ ███████ 
+   ██   ██ ████   ██ ██   ██ ██     ██       ██   ██    ██    ██      
+   ███████ ██ ██  ██ ███████ ██     ██   ███ ███████    ██    █████   
+   ██   ██ ██  ██ ██ ██   ██ ██     ██    ██ ██   ██    ██    ██      
+   ██   ██ ██   ████ ██   ██ ███████ ██████  ██   ██    ██    ███████ 
+   
+    &gt; ENTER HERE &lt;
+   </pre>
+        </div>
+    </div>
+    <div id="__next" style="display: none;" class="mainpanel">
         <script>!function () { try { var d = document.documentElement, c = d.classList; c.remove('light', 'dark'); var e = localStorage.getItem('theme'); if ('system' === e || (!e && false)) { var t = '(prefers-color-scheme: dark)', m = window.matchMedia(t); if (m.media !== t || m.matches) { d.style.colorScheme = 'dark'; c.add('dark') } else { d.style.colorScheme = 'light'; c.add('light') } } else if (e) { c.add(e || '') } else { c.add('dark') } if (e === 'light' || e === 'dark' || !e) d.style.colorScheme = e || 'dark' } catch (e) { } }()</script>
         <main class="h-screen overflow-hidden __className_0f05b8 ">
             <div
@@ -47,7 +67,7 @@
                     </filter>
                 </defs>
             </svg>
-            <div id="particle-background" class="bg-image-container"><img src="/bg.png" class="background-image" />
+            <div id="particle-background" class="bg-image-container"><img src="bg.png" class="background-image" />
             </div>
             <footer class="footer">
                 <div class="footer-content">Copyright © 2025 - ACC Foundation - Gagster Agent. All rights reserved.
